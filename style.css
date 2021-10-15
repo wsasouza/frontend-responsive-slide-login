@@ -12,12 +12,12 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #03a9f4;
+  background: #033d06;
   transition: 0.5s;
 }
 
 body.active {
-  background: #f43648;
+  background: #7c077c;
 }
 
 .container {
@@ -136,15 +136,26 @@ body.active {
 }
 
 .formBx .form form input[type="submit"] {
-  background: #03a9f4;
+  background: #033d06;
   border: none;
   color: #fff;
   max-width: 150px;
   cursor: pointer;
+  opacity: 0.8;
+  transition: 0.5s;
+  
+}
+
+.formBx .form form input[type="submit"]:hover {
+  opacity: 1;
 }
 
 .formBx.active .form form input[type="submit"] {
-  background: #f43648;
+  background: #7c077c;
+}
+
+.formBx.active .form form input[type="submit"]:hover {
+  opacity: 1;
 }
 
 .formBx .form form .forgot {
